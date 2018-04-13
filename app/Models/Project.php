@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-class User extends Model
+class Project extends Model
 {
     protected $fillable = [
-        'first_name',
-        'last_name',
-        'api_key'
+        'name',
     ];
 
     protected $hidden = [];
@@ -15,8 +13,7 @@ class User extends Model
     public static function getRules()
     {
         return [
-            'first_name' => 'required',
-            'last_name' => 'required',
+            'name' => 'required'
         ];
     }
 }
