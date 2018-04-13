@@ -1,0 +1,174 @@
+{
+	"variables": [],
+	"info": {
+		"name": "pumpen",
+		"_postman_id": "79c2c06c-7d51-8bb8-8e4f-f2f2bc4a5bd9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"url": "http://localhost:8080/api/ping",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Projects",
+			"request": {
+				"url": "http://localhost:8080/api/projects",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project",
+			"request": {
+				"url": "http://localhost:8080/api/projects/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project",
+			"request": {
+				"url": "http://localhost:8080/api/projects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"My Project\",\n\t\"param_a\": \"a\",\n\t\"param_b\": \"b\",\n\t\"param_c\": \"c\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project",
+			"request": {
+				"url": "http://localhost:8080/api/projects/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"My Project - update\",\n\t\"param_a\": \"a_a\",\n\t\"param_b\": \"b_b\",\n\t\"param_c\": \"c_c\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Project",
+			"request": {
+				"url": "http://localhost:8080/api/projects/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"url": "http://localhost:8080/api/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"url": "http://localhost:8080/api/users/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"url": "http://localhost:8080/api/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\": \"Max\",\n\t\"last_name\": \"Mustermann\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"url": "http://localhost:8080/api/users/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\": \"Anna\",\n\t\"last_name\": \"Schulz\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"url": "http://localhost:8080/api/users/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

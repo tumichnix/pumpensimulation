@@ -26,7 +26,7 @@ class ProjectController extends ApiController
     {
         $this->validate($request, Project::getRules());
 
-        $project = new Project($request->only(['name']));
+        $project = new Project($request->all());
         $project->save();
 
         return new ProjectResource($project);
